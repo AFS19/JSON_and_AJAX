@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 500px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header>h1 {
+  margin: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+}
+
+#btn {
+  margin: 1rem;
+  padding: 10px;
+  font-size: x-small;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: aquamarine;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: bisque;
+  transform: scale(0.99);
+  border: 1px solid gainsboro
+}
