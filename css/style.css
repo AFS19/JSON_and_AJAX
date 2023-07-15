@@ -5,20 +5,22 @@
 }
 
 body {
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-
 }
 
-header>h1 {
+header > h1 {
   margin: 1rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: x-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: smaller;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid sienna;
+  cursor: pointer;
 }
 
 #btn {
@@ -30,11 +32,30 @@ header>h1 {
   outline: none;
   background-color: aquamarine;
   border-radius: 2px;
+}
+
+#btn:hover:not([disabled]) {
+  background-color: bisque;
+  transform: scale(0.99);
+  border: 1px solid gainsboro;
   cursor: pointer;
 }
 
-#btn:hover {
-  background-color: bisque;
-  transform: scale(0.99);
-  border: 1px solid gainsboro
+#animal-info {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+#animal-info > p {
+  margin: 10px;
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  background-color: beige;
+  padding: 10px;
+}
+
+.hide-me {
+  visibility: none;
 }
